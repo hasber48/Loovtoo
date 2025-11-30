@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Квиз</title>
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body> 
-        <h1>Творческая работа</h1>
-        <ol>
-            <li><a href="./1_coin/coin.html">Мonetka</a></li>
-            <li><a href="./2_coins/coins.html">Большая монетка</a></li>
-            <li><a href="./3_quiz/index.html">Квиз</a></li>
-        </ol>
-    </body>
-    <script src="js/script.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css"/>
+  <title>Geo Quiz</title>
+</head>
+<body>
+  <h1>Geo Quiz</h1>
+  <button id="startButton">Start</button>
+  <div id="questionBlock" style="display: none;">
+    <img src="https://www.amigo-s.ru/content-images/6f7601ae9f1d6231d7f3fb9fc86feca1.jpg">
+    <p>What is the capital of Hungary?</p>
+    <div id="answerBlock" class="grid">
+      <div id="answerA" class="item">Paris</div>
+      <div id="answerB" class="item">Tallinn</div>
+      <div id="answerC" class="item">Budapest</div>
+      <div id="answerD" class="item">Wien</div>
+    </div>
+  </div>
+</body>
 </html>
