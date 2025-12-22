@@ -52,6 +52,17 @@ button {
   margin-bottom: 48px;
 }
 
+#gameScreen {
+  position: relative;
+  padding-top: 80px;
+}
+
+#scoreBlock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 48px;
+}
 #questionBlock {
   width: 80%;
   margin: 0 auto;

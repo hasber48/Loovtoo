@@ -1,10 +1,13 @@
 const startButton = document.getElementById("startButton");
-// const questionBlock = document.getElementById("questionBlock");
-const game = document.getElementById("game");
+const startScreen = document.getElementById("startScreen");
+const gameScreen = document.getElementById("gameScreen");
+const scoreSpan = document.getElementById("scoreSpan")
+let score = 0
+
 
 startButton.addEventListener("click", function() {
-  startButton.style.display = "none";
-  game.style.display = "";
+  startScreen.style.display = "none";
+  gameScreen.style.display = "";
 } );
 
 const answerItems = document.querySelectorAll(".item");
@@ -18,8 +21,7 @@ answerItems.forEach(function(item) {
 function checkAnswer(selectedAnswer) {
   const correctAnswer = "Budapest";
   if (selectedAnswer === correctAnswer) {
-    alert("Correct!");
-  } else {
-    alert("Wrong answer. Try again!");
-  }
+    score++;
+    scoreSpan.textContent = score;
+ }
 };
