@@ -47,7 +47,7 @@ button {
   font-size: 20px;
 }
 
-.questionText {
+#questionText {
   font-size: 48px;
   margin-bottom: 48px;
 }
