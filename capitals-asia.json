@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of China?",
+    "options": ["Beijing", "Shanghai", "Guangzhou", "Shenzhen"],
+    "correctAnswer": "Beijing",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Forbidden_City_IMG_8611.jpg/1280px-Forbidden_City_IMG_8611.jpg"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "options": ["Tokyo", "Osaka", "Kyoto", "Yokohama"],
+    "correctAnswer": "Tokyo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Senso-ji_Nakamise_Street.jpg/1280px-Senso-ji_Nakamise_Street.jpg"
+  },
+  {
+    "question": "What is the capital of India?",
+    "options": ["New Delhi", "Mumbai", "Bangalore", "Kolkata"],
+    "correctAnswer": "New Delhi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Delhi_Rajpath.jpg/1280px-Delhi_Rajpath.jpg"
+  },
+  {
+    "question": "What is the capital of Thailand?",
+    "options": ["Bangkok", "Phuket", "Chiang Mai", "Pattaya"],
+    "correctAnswer": "Bangkok",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Bangkok_Wat_Saket_2016.jpg/1280px-Bangkok_Wat_Saket_2016.jpg"
+  },
+  {
+    "question": "What is the capital of South Korea?",
+    "options": ["Seoul", "Busan", "Incheon", "Daegu"],
+    "correctAnswer": "Seoul",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Namsan_Seoul_Tower_night_panorama.jpg/1280px-Namsan_Seoul_Tower_night_panorama.jpg"
+  },
+  {
+    "question": "What is the capital of Vietnam?",
+    "options": ["Hanoi", "Ho Chi Minh City", "Da Nang", "Hai Phong"],
+    "correctAnswer": "Hanoi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Hanoi_Old_Quarter_1.jpg/1280px-Hanoi_Old_Quarter_1.jpg"
+  },
+  {
+    "question": "What is the capital of Philippines?",
+    "options": ["Manila", "Cebu", "Davao", "Quezon City"],
+    "correctAnswer": "Manila",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Intramuros_Manila_Philippines.jpg/1280px-Intramuros_Manila_Philippines.jpg"
+  },
+  {
+    "question": "What is the capital of Indonesia?",
+    "options": ["Jakarta", "Surabaya", "Bandung", "Medan"],
+    "correctAnswer": "Jakarta",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Kota_Tua_Jakarta.jpg/1280px-Kota_Tua_Jakarta.jpg"
+  },
+  {
+    "question": "What is the capital of Pakistan?",
+    "options": ["Islamabad", "Karachi", "Lahore", "Peshawar"],
+    "correctAnswer": "Islamabad",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Pakistan_Monument_-_Islamabad.jpg/1280px-Pakistan_Monument_-_Islamabad.jpg"
+  },
+  {
+    "question": "What is the capital of Malaysia?",
+    "options": ["Kuala Lumpur", "George Town", "Kota Kinabalu", "Melaka"],
+    "correctAnswer": "Kuala Lumpur",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Petronas_Twin_Towers.jpg/1280px-Petronas_Twin_Towers.jpg"
+  }
+]

@@ -1,59 +1,65 @@
 const startButton = document.getElementById("startButton");
 const nextButton = document.getElementById("nextButton");
+const restartButton = document.getElementById("restartButton");
 const startScreen = document.getElementById("startScreen");
 const gameScreen = document.getElementById("gameScreen");
+const gameSelectionScreen = document.getElementById("gameSelectionScreen");
+const gameOverScreen = document.getElementById("gameOverScreen");
 const scoreSpan = document.getElementById("scoreSpan");
+
 let answerBlocked = false;
 let score = 0;
 let questionIndex = 0;
 let correctAnswer = "";
 
-const questions = [
-  {
-    question: "What is the capital of Hungary?",
-    options: ["Budapest", "Paris", "London", "Berlin"],
-    correctAnswer: "Budapest",
-    img: "https://www.amigo-s.ru/content-images/6f7601ae9f1d6231d7f3fb9fc86feca1.jpg"
-  },
-  {
-    question: "What is the capital of France?",
-    options: ["Madrid", "Rome", "Paris", "Lisbon"],
-    correctAnswer: "Paris",
-    img: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg"
-  },
-  {
-    question: "What is the capital of Italy?",
-    options: ["Venice", "Rome", "Milan", "Naples"],
-    correctAnswer: "Rome",
-    img: "https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/583665dc-c63e-4d7e-bdc4-c80bfad7756a/-/format/webp/-/resize/1300x/"
-  },
-  {
-    question: "What is the capital of Germany?",
-    options: ["Berlin", "Munich", "Frankfurt", "Hamburg"],
-    correctAnswer: "Berlin",
-    img: "https://ethnomir.ru/upload/medialibrary/caa/berlin.jpg"
-  },
-  {
-    question: "What is the capital of Luxembourg?",
-    options: ["Luxembourg City", "Paris", "Brussels", "Berlin"],
-    correctAnswer: "Luxembourg City",
-    img: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/99000/99241-Vianden.jpg"
-  },
-  {
-    question: "What is the capital of Spain?",
-    options: ["Madrid", "Barcelona", "Seville", "Valencia"],
-    correctAnswer: "Madrid",
-    img: "https://blog-cdn.aviata.kz/blog/categories/Frame_3_65_bVy2HKn.png"
-  }
-  ];
+let questions = [];
 
 startButton.addEventListener("click", function() {
   startScreen.style.display = "none";
-  gameScreen.style.display = "";
-  loadQuestion(questionIndex);
+  gameSelectionScreen.style.display = "";
+});
+
+// Pack selection
+const packFiles = {
+  "capitals-europe": "capitals-europe.json",
+  "capitals-asia": "capitals-asia.json",
+  "capitals-americas": "capitals-americas.json",
+  "capitals-africa": "capitals-africa.json",
+  "flags-europe": "flags-europe.json",
+  "flags-asia": "flags-asia.json",
+  "flags-americas": "flags-americas.json",
+  "flags-africa": "flags-africa.json"
+};
+
+const packItems = document.querySelectorAll(".pack-item");
+packItems.forEach(item => {
+  item.addEventListener("click", function() {
+    const packName = this.getAttribute("data-pack");
+    if (packFiles[packName]) {
+      gameSelectionScreen.style.display = "none";
+      gameScreen.style.display = "";
+      score = 0;
+      questionIndex = 0;
+      scoreSpan.textContent = score;
+      loadQuestionsFromFile(packFiles[packName]);
+      loadQuestion(questionIndex);
+    }
+  });
+});
+
+// Back buttons
+document.getElementById("backButton1").addEventListener("click", function() {
+  gameSelectionScreen.style.display = "none";
+  startScreen.style.display = "";
+});
+
+document.getElementById("backButton2").addEventListener("click", function() {
+  gameScreen.style.display = "none";
+  gameSelectionScreen.style.display = "";
 });
 
 const answerItems = document.querySelectorAll(".item");
+
 answerItems.forEach(function(item) {
   item.addEventListener("click", function() {
     if (answerBlocked == false) {
@@ -65,6 +71,44 @@ answerItems.forEach(function(item) {
   });
 });
 
+nextButton.addEventListener("click", function() {
+  if (questionIndex < questions.length - 1) {
+    questionIndex++;
+    loadQuestion(questionIndex);
+    nextButton.style.display = "none";
+    answerBlocked = false;
+  } else {
+    gameScreen.style.display = "none";
+    gameOverScreen.style.display = "";
+    document.getElementById("finalScoreSpan").textContent = score;
+  }
+});
+
+restartButton.addEventListener("click", function() {
+  gameOverScreen.style.display = "none";
+  startScreen.style.display = "";
+});
+
+
+function loadQuestionsFromFile(questionsFile) {
+  const request = new XMLHttpRequest();
+  request.open('GET', questionsFile, false);
+  request.send();
+  questions = JSON.parse(request.responseText);
+}
+
+function loadQuestion(questionIndex) {
+  const question = questions[questionIndex];
+  console.log(`Loading question ${questionIndex}: ${question.correctAnswer}`)
+  document.getElementById("questionText").textContent = question.question;
+  const answerItems = document.querySelectorAll(".item");
+  answerItems.forEach(function(item, index) {
+    item.textContent = question.options[index];  
+  })
+  document.getElementById("questionImg").src = question.img;
+  correctAnswer = question.correctAnswer;
+}; 
+
 function checkAnswer(selectedAnswer) {
   if (selectedAnswer === correctAnswer) {
     score++;
@@ -75,23 +119,3 @@ function checkAnswer(selectedAnswer) {
     scoreSpan.textContent = score;
  }
 };
-
-function loadQuestion(questionIndex) {
-  const question = questions[questionIndex];
-  document.getElementById("questionText").textContent = question.question;
-  const answerItems = document.querySelectorAll(".item");
-  answerItems.forEach(function(item, index) {
-    item.textContent = question.options[index];  
-  })
-  document.getElementById("questionImg").src = question.img;
-  correctAnswer = question.correctAnswer;
-}; 
-
-nextButton.addEventListener("click", function() {
-  if (questionIndex <= 4) {
-    questionIndex++;
-    loadQuestion(questionIndex);
-    nextButton.style.display = "none";
-    answerBlocked = false;
-  }
-});

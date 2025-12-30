@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Which country has this flag?",
+    "options": ["Egypt", "Sudan", "Libya", "Algeria"],
+    "correctAnswer": "Egypt",
+    "img": "https://upload.wikimedia.org/wikipedia/en/c/ce/Flag_of_Egypt.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["South Africa", "Zimbabwe", "Botswana", "Namibia"],
+    "correctAnswer": "South Africa",
+    "img": "https://upload.wikimedia.org/wikipedia/en/a/af/Flag_of_South_Africa.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Nigeria", "Ghana", "Senegal", "Mali"],
+    "correctAnswer": "Nigeria",
+    "img": "https://upload.wikimedia.org/wikipedia/en/7/79/Flag_of_Nigeria.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Kenya", "Uganda", "Tanzania", "Ethiopia"],
+    "correctAnswer": "Kenya",
+    "img": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_Kenya.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Ghana", "Côte d'Ivoire", "Senegal", "Mali"],
+    "correctAnswer": "Ghana",
+    "img": "https://upload.wikimedia.org/wikipedia/en/1/19/Flag_of_Ghana.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Ethiopia", "Eritrea", "Somalia", "Djibouti"],
+    "correctAnswer": "Ethiopia",
+    "img": "https://upload.wikimedia.org/wikipedia/en/7/71/Flag_of_Ethiopia.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Morocco", "Algeria", "Tunisia", "Libya"],
+    "correctAnswer": "Morocco",
+    "img": "https://upload.wikimedia.org/wikipedia/en/2/2c/Flag_of_Morocco.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Tanzania", "Kenya", "Uganda", "Rwanda"],
+    "correctAnswer": "Tanzania",
+    "img": "https://upload.wikimedia.org/wikipedia/en/3/38/Flag_of_Tanzania.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Uganda", "Kenya", "Tanzania", "Rwanda"],
+    "correctAnswer": "Uganda",
+    "img": "https://upload.wikimedia.org/wikipedia/en/4/4e/Flag_of_Uganda.svg"
+  },
+  {
+    "question": "Which country has this flag?",
+    "options": ["Senegal", "Mali", "Mauritania", "Guinea"],
+    "correctAnswer": "Senegal",
+    "img": "https://upload.wikimedia.org/wikipedia/en/f/fd/Flag_of_Senegal.svg"
+  }
+]

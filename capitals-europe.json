@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of Hungary?",
+    "options": ["Budapest", "Paris", "London", "Berlin"],
+    "correctAnswer": "Budapest",
+    "img": "https://www.amigo-s.ru/content-images/6f7601ae9f1d6231d7f3fb9fc86feca1.jpg"
+  },
+  {
+    "question": "What is the capital of France?",
+    "options": ["Madrid", "Rome", "Paris", "Lisbon"],
+    "correctAnswer": "Paris",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg"
+  },
+  {
+    "question": "What is the capital of Italy?",
+    "options": ["Venice", "Rome", "Milan", "Naples"],
+    "correctAnswer": "Rome",
+    "img": "https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/583665dc-c63e-4d7e-bdc4-c80bfad7756a/-/format/webp/-/resize/1300x/"
+  },
+  {
+    "question": "What is the capital of Germany?",
+    "options": ["Berlin", "Munich", "Frankfurt", "Hamburg"],
+    "correctAnswer": "Berlin",
+    "img": "https://ethnomir.ru/upload/medialibrary/caa/berlin.jpg"
+  },
+  {
+    "question": "What is the capital of Luxembourg?",
+    "options": ["Luxembourg City", "Paris", "Brussels", "Berlin"],
+    "correctAnswer": "Luxembourg City",
+    "img": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/99000/99241-Vianden.jpg"
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "options": ["Madrid", "Barcelona", "Seville", "Valencia"],
+    "correctAnswer": "Madrid",
+    "img": "https://blog-cdn.aviata.kz/blog/categories/Frame_3_65_bVy2HKn.png"
+  },
+  {
+    "question": "What is the capital of Portugal?",
+    "options": ["Lisbon", "Porto", "Faro", "Coimbra"],
+    "correctAnswer": "Lisbon",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ef/2e/7e/caption.jpg?w=1200&h=-1&s=1"
+  },
+  {
+    "question": "What is the capital of Belgium?",
+    "options": ["Brussels", "Antwerp", "Ghent", "Bruges"],
+    "correctAnswer": "Brussels",
+    "img": "https://www.belgique-tourisme.fr/app/uploads/2019/07/Grand-Place-de-Bruxelles.jpg"
+  },
+  {
+    "question": "What is the capital of the Netherlands?",
+    "options": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht"],
+    "correctAnswer": "Amsterdam",
+    "img": "https://www.holland.com/upload_mm/3/2/5/28645_fullimage_amsterdam_canals_shutterstock_172648108_736x490.jpg"
+  },
+  {
+    "question": "What is the capital of Austria?",
+    "options": ["Vienna", "Salzburg", "Graz", "Innsbruck"],
+    "correctAnswer": "Vienna",
+    "img": "https://www.austria.info/media/Media/Images/ATTRACTIONS/Vienna/Schönbrunn-Palace-Vienna-Austria-Tourism-Marketing-GmbH-APA-Fotoservice-Herbert-Pichler.jpg"
+  }
+]

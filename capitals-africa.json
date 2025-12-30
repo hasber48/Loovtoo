@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of Egypt?",
+    "options": ["Cairo", "Alexandria", "Giza", "Luxor"],
+    "correctAnswer": "Cairo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Giza_pyramid_complex_%282005%29.jpg/1280px-Giza_pyramid_complex_%282005%29.jpg"
+  },
+  {
+    "question": "What is the capital of South Africa?",
+    "options": ["Pretoria", "Johannesburg", "Cape Town", "Durban"],
+    "correctAnswer": "Pretoria",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Union_buildings_facade.jpg/1280px-Union_buildings_facade.jpg"
+  },
+  {
+    "question": "What is the capital of Nigeria?",
+    "options": ["Abuja", "Lagos", "Kano", "Ibadan"],
+    "correctAnswer": "Abuja",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Abuja_Montage.jpg/1280px-Abuja_Montage.jpg"
+  },
+  {
+    "question": "What is the capital of Kenya?",
+    "options": ["Nairobi", "Mombasa", "Kisumu", "Nakuru"],
+    "correctAnswer": "Nairobi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Nairobi_skyline_night.jpg/1280px-Nairobi_skyline_night.jpg"
+  },
+  {
+    "question": "What is the capital of Ghana?",
+    "options": ["Accra", "Kumasi", "Tamale", "Sekondi"],
+    "correctAnswer": "Accra",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Independence_Square_Accra.jpg/1280px-Independence_Square_Accra.jpg"
+  },
+  {
+    "question": "What is the capital of Ethiopia?",
+    "options": ["Addis Ababa", "Dire Dawa", "Adama", "Mekelle"],
+    "correctAnswer": "Addis Ababa",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Addis_Ababa_from_above.jpg/1280px-Addis_Ababa_from_above.jpg"
+  },
+  {
+    "question": "What is the capital of Morocco?",
+    "options": ["Rabat", "Casablanca", "Fez", "Marrakech"],
+    "correctAnswer": "Rabat",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Rabat_Sunset.jpg/1280px-Rabat_Sunset.jpg"
+  },
+  {
+    "question": "What is the capital of Tanzania?",
+    "options": ["Dodoma", "Dar es Salaam", "Mbeya", "Arusha"],
+    "correctAnswer": "Dodoma",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Parliament_Building_of_Tanzania.jpg/1280px-Parliament_Building_of_Tanzania.jpg"
+  },
+  {
+    "question": "What is the capital of Uganda?",
+    "options": ["Kampala", "Gulu", "Mbarara", "Jinja"],
+    "correctAnswer": "Kampala",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kabaka_Palace_Kampala.jpg/1280px-Kabaka_Palace_Kampala.jpg"
+  },
+  {
+    "question": "What is the capital of Senegal?",
+    "options": ["Dakar", "Thiès", "Kaolack", "Saint-Louis"],
+    "correctAnswer": "Dakar",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Dakar_from_above.jpg/1280px-Dakar_from_above.jpg"
+  }
+]

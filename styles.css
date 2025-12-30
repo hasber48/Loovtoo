@@ -47,6 +47,21 @@ button {
   font-size: 20px;
 }
 
+.pack-item {
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.pack-item:hover {
+  background: #6fa8dc;
+  transform: scale(1.05);
+}
+
 #questionText {
   font-size: 48px;
   margin-bottom: 48px;
