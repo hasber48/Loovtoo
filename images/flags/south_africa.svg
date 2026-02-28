@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="525" xmlns="http://www.w3.org/2000/svg">
+  <rect x='0' y='0' width='700' height='75' fill='#000000' />
+  <rect x='0' y='75' width='700' height='75' fill='#FFFFFF' />
+  <rect x='0' y='150' width='700' height='75' fill='#000000' />
+  <rect x='0' y='225' width='700' height='75' fill='#FFB81C' />
+  <rect x='0' y='300' width='700' height='75' fill='#007169' />
+  <rect x='0' y='375' width='700' height='75' fill='#FFFFFF' />
+  <rect x='0' y='450' width='700' height='75' fill='#DE3831' />
+</svg>

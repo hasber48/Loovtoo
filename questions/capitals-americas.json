@@ -1,62 +1,112 @@
-[
-  {
-    "question": "What is the capital of the United States?",
-    "options": ["Washington D.C.", "New York", "Los Angeles", "Chicago"],
-    "correctAnswer": "Washington D.C.",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Lincoln_Memorial_sunset_2.jpg/1280px-Lincoln_Memorial_sunset_2.jpg"
-  },
-  {
-    "question": "What is the capital of Canada?",
-    "options": ["Ottawa", "Toronto", "Vancouver", "Montreal"],
-    "correctAnswer": "Ottawa",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Parliament_Hill_2012.jpg/1280px-Parliament_Hill_2012.jpg"
-  },
-  {
-    "question": "What is the capital of Mexico?",
-    "options": ["Mexico City", "Guadalajara", "Cancun", "Monterrey"],
-    "correctAnswer": "Mexico City",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mexico_City_Zocalo.jpg/1280px-Mexico_City_Zocalo.jpg"
-  },
-  {
-    "question": "What is the capital of Brazil?",
-    "options": ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"],
-    "correctAnswer": "Brasília",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Cathedral_Metropolitan_of_Brasilia_2.jpg/1280px-Cathedral_Metropolitan_of_Brasilia_2.jpg"
-  },
-  {
-    "question": "What is the capital of Argentina?",
-    "options": ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
-    "correctAnswer": "Buenos Aires",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Casa_Rosada_2006.jpg/1280px-Casa_Rosada_2006.jpg"
-  },
-  {
-    "question": "What is the capital of Colombia?",
-    "options": ["Bogotá", "Medellín", "Cali", "Barranquilla"],
-    "correctAnswer": "Bogotá",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Monserrate_Bogota.jpg/1280px-Monserrate_Bogota.jpg"
-  },
-  {
-    "question": "What is the capital of Peru?",
-    "options": ["Lima", "Cusco", "Arequipa", "Trujillo"],
-    "correctAnswer": "Lima",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/San_Francisco_Church%2C_Lima.jpg/1280px-San_Francisco_Church%2C_Lima.jpg"
-  },
-  {
-    "question": "What is the capital of Chile?",
-    "options": ["Santiago", "Valparaíso", "Concepción", "La Serena"],
-    "correctAnswer": "Santiago",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2010-01-27_Santiago_de_Chile_View_from_San_Cristobal.jpg/1280px-2010-01-27_Santiago_de_Chile_View_from_San_Cristobal.jpg"
-  },
-  {
-    "question": "What is the capital of Venezuela?",
-    "options": ["Caracas", "Maracaibo", "Valencia", "Barquisimeto"],
-    "correctAnswer": "Caracas",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Caracas_Skyline_2005.jpg/1280px-Caracas_Skyline_2005.jpg"
-  },
-  {
-    "question": "What is the capital of Jamaica?",
-    "options": ["Kingston", "Montego Bay", "Negril", "Spanish Town"],
-    "correctAnswer": "Kingston",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kingston_Jamaica.jpg/1280px-Kingston_Jamaica.jpg"
-  }
+﻿[
+    {
+        "question":  "What is the capital of the United States?",
+        "options":  [
+                        "Washington D.C.",
+                        "New York",
+                        "Los Angeles",
+                        "Chicago"
+                    ],
+        "correctAnswer":  "Washington D.C.",
+        "img":  "images/capitals/washington_dc.jpg"
+    },
+    {
+        "question":  "What is the capital of Canada?",
+        "options":  [
+                        "Ottawa",
+                        "Toronto",
+                        "Vancouver",
+                        "Montreal"
+                    ],
+        "correctAnswer":  "Ottawa",
+        "img":  "images/capitals/ottawa.jpg"
+    },
+    {
+        "question":  "What is the capital of Mexico?",
+        "options":  [
+                        "Mexico City",
+                        "Guadalajara",
+                        "Cancun",
+                        "Monterrey"
+                    ],
+        "correctAnswer":  "Mexico City",
+        "img":  "images/capitals/mexico_city.jpg"
+    },
+    {
+        "question":  "What is the capital of Brazil?",
+        "options":  [
+                        "BrasÃ­lia",
+                        "Rio de Janeiro",
+                        "SÃ£o Paulo",
+                        "Salvador"
+                    ],
+        "correctAnswer":  "BrasÃ­lia",
+        "img":  "images/capitals/brasilia.jpg"
+    },
+    {
+        "question":  "What is the capital of Argentina?",
+        "options":  [
+                        "Buenos Aires",
+                        "CÃ³rdoba",
+                        "Rosario",
+                        "Mendoza"
+                    ],
+        "correctAnswer":  "Buenos Aires",
+        "img":  "images/capitals/buenos_aires.jpg"
+    },
+    {
+        "question":  "What is the capital of Colombia?",
+        "options":  [
+                        "BogotÃ¡",
+                        "MedellÃ­n",
+                        "Cali",
+                        "Barranquilla"
+                    ],
+        "correctAnswer":  "BogotÃ¡",
+        "img":  "images/capitals/bogota.jpg"
+    },
+    {
+        "question":  "What is the capital of Peru?",
+        "options":  [
+                        "Lima",
+                        "Cusco",
+                        "Arequipa",
+                        "Trujillo"
+                    ],
+        "correctAnswer":  "Lima",
+        "img":  "images/capitals/lima.jpg"
+    },
+    {
+        "question":  "What is the capital of Chile?",
+        "options":  [
+                        "Santiago",
+                        "ValparaÃ­so",
+                        "ConcepciÃ³n",
+                        "La Serena"
+                    ],
+        "correctAnswer":  "Santiago",
+        "img":  "images/capitals/santiago.jpg"
+    },
+    {
+        "question":  "What is the capital of Venezuela?",
+        "options":  [
+                        "Caracas",
+                        "Maracaibo",
+                        "Valencia",
+                        "Barquisimeto"
+                    ],
+        "correctAnswer":  "Caracas",
+        "img":  "images/capitals/caracas.jpg"
+    },
+    {
+        "question":  "What is the capital of Jamaica?",
+        "options":  [
+                        "Kingston",
+                        "Montego Bay",
+                        "Negril",
+                        "Spanish Town"
+                    ],
+        "correctAnswer":  "Kingston",
+        "img":  "images/capitals/kingston.jpg"
+    }
 ]
