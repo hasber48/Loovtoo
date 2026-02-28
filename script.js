@@ -52,6 +52,7 @@ packItems.forEach(item => {
       gameScreen.style.display = "";
       score = 0;
       questionIndex = 0;
+      answerBlocked = false;
       scoreSpan.textContent = score;
       loadAnswerPool(answerPools[packName]);
       loadQuestionsFromFile(packFiles[packName]);

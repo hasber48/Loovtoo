@@ -35,12 +35,12 @@
     {
         "question":  "What is the capital of Brazil?",
         "options":  [
-                        "BrasÃ­lia",
+                        "Brasilia",
                         "Rio de Janeiro",
                         "SÃ£o Paulo",
                         "Salvador"
                     ],
-        "correctAnswer":  "BrasÃ­lia",
+        "correctAnswer":  "Brasilia",
         "img":  "images/capitals/brasilia.jpg"
     },
     {
@@ -57,8 +57,8 @@
     {
         "question":  "What is the capital of Colombia?",
         "options":  [
-                        "BogotÃ¡",
-                        "MedellÃ­n",
+                        "Bogota",
+                        "Medellin",
                         "Cali",
                         "Barranquilla"
                     ],
@@ -80,7 +80,7 @@
         "question":  "What is the capital of Chile?",
         "options":  [
                         "Santiago",
-                        "ValparaÃ­so",
+                        "Valparaso",
                         "ConcepciÃ³n",
                         "La Serena"
                     ],
