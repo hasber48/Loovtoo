@@ -1,112 +1,52 @@
-﻿[
+[
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "China",
-                        "Vietnam",
-                        "Japan",
-                        "North Korea"
-                    ],
-        "correctAnswer":  "China",
-        "img":  "images/flags/china.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "China",
+        "img": "images/flags/china.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Japan",
-                        "South Korea",
-                        "Thailand",
-                        "Vietnam"
-                    ],
-        "correctAnswer":  "Japan",
-        "img":  "images/flags/japan.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Japan",
+        "img": "images/flags/japan.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "India",
-                        "Pakistan",
-                        "Bangladesh",
-                        "Nepal"
-                    ],
-        "correctAnswer":  "India",
-        "img":  "images/flags/india.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "India",
+        "img": "images/flags/india.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Thailand",
-                        "Laos",
-                        "Myanmar",
-                        "Cambodia"
-                    ],
-        "correctAnswer":  "Thailand",
-        "img":  "images/flags/thailand.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Thailand",
+        "img": "images/flags/thailand.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "South Korea",
-                        "North Korea",
-                        "Japan",
-                        "Mongolia"
-                    ],
-        "correctAnswer":  "South Korea",
-        "img":  "images/flags/south_korea.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "South Korea",
+        "img": "images/flags/south_korea.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Vietnam",
-                        "Laos",
-                        "Cambodia",
-                        "Thailand"
-                    ],
-        "correctAnswer":  "Vietnam",
-        "img":  "images/flags/vietnam.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Vietnam",
+        "img": "images/flags/vietnam.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Philippines",
-                        "Indonesia",
-                        "Malaysia",
-                        "Singapore"
-                    ],
-        "correctAnswer":  "Philippines",
-        "img":  "images/flags/philippines.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Philippines",
+        "img": "images/flags/philippines.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Indonesia",
-                        "Malaysia",
-                        "Brunei",
-                        "Timor-Leste"
-                    ],
-        "correctAnswer":  "Indonesia",
-        "img":  "images/flags/indonesia.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Indonesia",
+        "img": "images/flags/indonesia.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Pakistan",
-                        "Afghanistan",
-                        "Iran",
-                        "Turkmenistan"
-                    ],
-        "correctAnswer":  "Pakistan",
-        "img":  "images/flags/pakistan.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Pakistan",
+        "img": "images/flags/pakistan.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Malaysia",
-                        "Singapore",
-                        "Brunei",
-                        "Thailand"
-                    ],
-        "correctAnswer":  "Malaysia",
-        "img":  "images/flags/malaysia.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Malaysia",
+        "img": "images/flags/malaysia.svg"
     }
 ]

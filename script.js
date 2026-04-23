@@ -6,6 +6,10 @@ const gameScreen = document.getElementById("gameScreen");
 const gameSelectionScreen = document.getElementById("gameSelectionScreen");
 const gameOverScreen = document.getElementById("gameOverScreen");
 const scoreSpan = document.getElementById("scoreSpan");
+const answerItems = document.querySelectorAll(".item");
+const questionImg = document.getElementById("questionImg");
+const questionText = document.getElementById("questionText");
+const finalScoreSpan = document.getElementById("finalScoreSpan");
 
 let answerBlocked = false;
 let score = 0;
@@ -16,109 +20,81 @@ let questions = [];
 let currentAnswerPool = [];
 
 startButton.addEventListener("click", function() {
-  startScreen.style.display = "none";
-  gameSelectionScreen.style.display = "";
+  startScreen.classList.add("hidden");
+  gameSelectionScreen.classList.remove("hidden");
 });
 
-// Pack selection
-const packFiles = {
-  "capitals-europe": "questions/capitals-europe.json",
-  "capitals-asia": "questions/capitals-asia.json",
-  "capitals-americas": "questions/capitals-americas.json",
-  "capitals-africa": "questions/capitals-africa.json",
-  "flags-europe": "questions/flags-europe.json",
-  "flags-asia": "questions/flags-asia.json",
-  "flags-americas": "questions/flags-americas.json",
-  "flags-africa": "questions/flags-africa.json"
-};
-
-const answerPools = {
-  "capitals-europe": "questions/pool-capitals-europe.json",
-  "capitals-asia": "questions/pool-capitals-asia.json",
-  "capitals-americas": "questions/pool-capitals-americas.json",
-  "capitals-africa": "questions/pool-capitals-africa.json",
-  "flags-europe": "questions/pool-flags-europe.json",
-  "flags-asia": "questions/pool-flags-asia.json",
-  "flags-americas": "questions/pool-flags-americas.json",
-  "flags-africa": "questions/pool-flags-africa.json"
-};
-
+// Pack selection — derive file paths from pack name instead of manual maps
 const packItems = document.querySelectorAll(".pack-item");
 packItems.forEach(item => {
   item.addEventListener("click", function() {
     const packName = this.getAttribute("data-pack");
-    if (packFiles[packName]) {
-      gameSelectionScreen.style.display = "none";
-      gameScreen.style.display = "";
-      score = 0;
-      questionIndex = 0;
-      answerBlocked = false;
-      scoreSpan.textContent = score;
-      loadAnswerPool(answerPools[packName]);
-      loadQuestionsFromFile(packFiles[packName]);
+    const questionsFile = "questions/" + packName + ".json";
+    const poolFile = "questions/pool-" + packName + ".json";
+
+    gameSelectionScreen.classList.add("hidden");
+    gameScreen.classList.remove("hidden");
+    score = 0;
+    questionIndex = 0;
+    answerBlocked = false;
+    scoreSpan.textContent = score;
+
+    Promise.all([
+      fetch(poolFile).then(function(r) { if (!r.ok) throw new Error("Failed to load " + poolFile); return r.json(); }),
+      fetch(questionsFile).then(function(r) { if (!r.ok) throw new Error("Failed to load " + questionsFile); return r.json(); })
+    ]).then(function(results) {
+      currentAnswerPool = results[0];
+      questions = shuffle(results[1]);
       loadQuestion(questionIndex);
-    }
+    }).catch(function(err) {
+      alert("Error loading quiz data: " + err.message);
+    });
   });
 });
 
 // Back buttons
 document.getElementById("backButton1").addEventListener("click", function() {
-  gameSelectionScreen.style.display = "none";
-  startScreen.style.display = "";
+  gameSelectionScreen.classList.add("hidden");
+  startScreen.classList.remove("hidden");
 });
 
 document.getElementById("backButton2").addEventListener("click", function() {
-  gameScreen.style.display = "none";
-  gameSelectionScreen.style.display = "";
+  gameScreen.classList.add("hidden");
+  gameSelectionScreen.classList.remove("hidden");
 });
-
-const answerItems = document.querySelectorAll(".item");
 
 answerItems.forEach(function(item) {
   item.addEventListener("click", function() {
-    if (answerBlocked == false) {
+    if (!answerBlocked) {
       const selectedAnswer = item.textContent;
-      checkAnswer(selectedAnswer);
+      checkAnswer(selectedAnswer, item);
       nextButton.style.visibility = "visible";
-      answerBlocked = true;      
+      answerBlocked = true;
     }
   });
 });
 
 nextButton.addEventListener("click", function() {
+  answerItems.forEach(function(item) {
+    item.classList.remove("correct", "incorrect");
+  });
+
   if (questionIndex < questions.length - 1) {
     questionIndex++;
     loadQuestion(questionIndex);
     nextButton.style.visibility = "hidden";
     answerBlocked = false;
   } else {
-    gameScreen.style.display = "none";
-    gameOverScreen.style.display = "";
-    document.getElementById("finalScoreSpan").textContent = score;
+    gameScreen.classList.add("hidden");
+    gameOverScreen.classList.remove("hidden");
+    finalScoreSpan.textContent = score;
   }
 });
 
 restartButton.addEventListener("click", function() {
-  gameOverScreen.style.display = "none";
-  startScreen.style.display = "";
+  gameOverScreen.classList.add("hidden");
+  startScreen.classList.remove("hidden");
 });
-
-
-function loadAnswerPool(poolFile) {
-  const request = new XMLHttpRequest();
-  request.open('GET', poolFile, false);
-  request.send();
-  currentAnswerPool = JSON.parse(request.responseText);
-}
-
-function loadQuestionsFromFile(questionsFile) {
-  const request = new XMLHttpRequest();
-  request.open('GET', questionsFile, false);
-  request.send();
-  questions = JSON.parse(request.responseText);
-  // Shuffle questions
-  questions = shuffle(questions);
-}
 
 function shuffle(array) {
   const shuffled = [...array];
@@ -130,39 +106,40 @@ function shuffle(array) {
 }
 
 function getRandomItems(array, count, exclude) {
-  const filtered = array.filter(item => item !== exclude);
+  const filtered = array.filter(function(item) { return item !== exclude; });
   const shuffled = shuffle(filtered);
   return shuffled.slice(0, count);
 }
 
 function loadQuestion(questionIndex) {
   const question = questions[questionIndex];
-  console.log(`Loading question ${questionIndex}: ${question.correctAnswer}`)
-  document.getElementById("questionText").textContent = question.question;
-  
-  // Get 3 random wrong answers from the answer pool (excluding correct answer)
-  const wrongAnswers = getRandomItems(currentAnswerPool, 3, question.correctAnswer);
-  
-  // Combine correct answer with wrong answers and shuffle
-  const allOptions = [question.correctAnswer, ...wrongAnswers];
-  const shuffledOptions = shuffle(allOptions);
-  
-  const answerItems = document.querySelectorAll(".item");
+  questionText.textContent = question.question;
+
+  var wrongAnswers = getRandomItems(currentAnswerPool, 3, question.correctAnswer);
+  var allOptions = [question.correctAnswer].concat(wrongAnswers);
+  var shuffledOptions = shuffle(allOptions);
+
   answerItems.forEach(function(item, index) {
-    item.textContent = shuffledOptions[index];  
-  })
-  document.getElementById("questionImg").src = question.img;
+    item.textContent = shuffledOptions[index];
+  });
+  questionImg.src = question.img;
+  questionImg.alt = question.question;
   correctAnswer = question.correctAnswer;
   nextButton.style.visibility = "hidden";
 }
 
-function checkAnswer(selectedAnswer) {
+function checkAnswer(selectedAnswer, selectedItem) {
   if (selectedAnswer === correctAnswer) {
     score++;
-    scoreSpan.textContent = score;
-  }
-  else {
+    selectedItem.classList.add("correct");
+  } else {
     score--;
-    scoreSpan.textContent = score;
+    selectedItem.classList.add("incorrect");
+    answerItems.forEach(function(item) {
+      if (item.textContent === correctAnswer) {
+        item.classList.add("correct");
+      }
+    });
   }
+  scoreSpan.textContent = score;
 }

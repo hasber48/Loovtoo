@@ -1,8 +1,8 @@
 [
-  "Washington", "Mexico City", "Ottawa", "Guatemala City", "San Salvador", "Tegucigalpa",
-  "Managua", "San Jose", "Panama City", "Havana", "Santo Domingo", "Port-au-Prince",
-  "Kingston", "Bridgetown", "Barbados", "St. George's", "Nassau", "Belmopan", "Paramaribo",
-  "Georgetown", "Quito", "Lima", "Bogota", "Caracas", "Brasilia", "Rio de Janeiro",
-  "Santiago", "La Paz", "Asuncion", "Montevideo", "Buenos Aires", "Cayenne", "Cayenne",
+  "Washington D.C.", "Mexico City", "Ottawa", "Guatemala City", "San Salvador", "Tegucigalpa",
+  "Managua", "San José", "Panama City", "Havana", "Santo Domingo", "Port-au-Prince",
+  "Kingston", "Bridgetown", "St. George's", "Nassau", "Belmopan", "Paramaribo",
+  "Georgetown", "Quito", "Lima", "Bogotá", "Caracas", "Brasilia",
+  "Santiago", "La Paz", "Asunción", "Montevideo", "Buenos Aires",
   "Port of Spain", "Castries", "Kingstown", "St. John's", "Roseau"
 ]

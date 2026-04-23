@@ -1,112 +1,52 @@
-﻿[
+[
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "France",
-                        "Italy",
-                        "Spain",
-                        "Netherlands"
-                    ],
-        "correctAnswer":  "France",
-        "img":  "images/flags/france.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "France",
+        "img": "images/flags/france.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Germany",
-                        "Belgium",
-                        "Austria",
-                        "Hungary"
-                    ],
-        "correctAnswer":  "Germany",
-        "img":  "images/flags/germany.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Germany",
+        "img": "images/flags/germany.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Spain",
-                        "Portugal",
-                        "Poland",
-                        "Greece"
-                    ],
-        "correctAnswer":  "Spain",
-        "img":  "images/flags/spain.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Spain",
+        "img": "images/flags/spain.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Italy",
-                        "Mexico",
-                        "Hungary",
-                        "Peru"
-                    ],
-        "correctAnswer":  "Italy",
-        "img":  "images/flags/italy.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Italy",
+        "img": "images/flags/italy.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "United Kingdom",
-                        "Australia",
-                        "New Zealand",
-                        "Canada"
-                    ],
-        "correctAnswer":  "United Kingdom",
-        "img":  "images/flags/uk.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "United Kingdom",
+        "img": "images/flags/uk.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Poland",
-                        "Czech Republic",
-                        "Slovakia",
-                        "Croatia"
-                    ],
-        "correctAnswer":  "Poland",
-        "img":  "images/flags/poland.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Poland",
+        "img": "images/flags/poland.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Sweden",
-                        "Norway",
-                        "Finland",
-                        "Denmark"
-                    ],
-        "correctAnswer":  "Sweden",
-        "img":  "images/flags/sweden.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Sweden",
+        "img": "images/flags/sweden.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Greece",
-                        "Cyprus",
-                        "Croatia",
-                        "Slovenia"
-                    ],
-        "correctAnswer":  "Greece",
-        "img":  "images/flags/greece.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Greece",
+        "img": "images/flags/greece.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Switzerland",
-                        "Austria",
-                        "Liechtenstein",
-                        "Czech Republic"
-                    ],
-        "correctAnswer":  "Switzerland",
-        "img":  "images/flags/switzerland.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Switzerland",
+        "img": "images/flags/switzerland.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Netherlands",
-                        "Belgium",
-                        "Luxembourg",
-                        "Denmark"
-                    ],
-        "correctAnswer":  "Netherlands",
-        "img":  "images/flags/netherlands.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Netherlands",
+        "img": "images/flags/netherlands.svg"
     }
 ]

@@ -3,12 +3,16 @@ body {
   margin: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;   
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #333;
+}
+
+.hidden {
+  display: none !important;
 }
 
 img {
@@ -84,7 +88,7 @@ button:hover::before {
 
 button:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 5px 15px rgba(90, 127, 191, 0.4);
 }
 
 .grid {
@@ -95,11 +99,11 @@ button:active {
   margin: 0 auto;
 }
 
-.item {
+/* Shared styles for clickable card items */
+.item,
+.pack-item {
   background: rgba(255, 255, 255, 0.9);
-  padding: clamp(10px, 1.5vh, 20px);
   text-align: center;
-  font-size: clamp(14px, 2vh, 20px);
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -107,29 +111,36 @@ button:active {
   color: #333;
 }
 
-.item:hover {
+.item:hover,
+.pack-item:hover {
   background: rgba(255, 255, 255, 1);
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  padding: clamp(10px, 1.5vh, 20px);
+  font-size: clamp(14px, 2vh, 20px);
 }
 
 .pack-item {
   background: rgba(255, 255, 255, 0.95);
   padding: 25px;
-  text-align: center;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  color: #333;
 }
 
-.pack-item:hover {
-  background: rgba(255, 255, 255, 1);
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+/* Answer feedback states */
+.item.correct {
+  background: rgba(76, 175, 80, 0.9);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.item.incorrect {
+  background: rgba(244, 67, 54, 0.9);
+  color: white;
+  transform: translateY(-2px);
 }
 
 #questionText {

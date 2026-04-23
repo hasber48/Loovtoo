@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test your knowledge of world capitals and country flags">
   <link rel="stylesheet" href="./styles.css"/>
   <title>Geo Quiz</title>
 </head>
@@ -13,7 +14,7 @@
     <button id="startButton">Start</button>
   </div>
   <!-- GAME SELECTION SCREEN -->
-  <div id="gameSelectionScreen" style="display: none;">
+  <div id="gameSelectionScreen" class="hidden">
     <h2>Select Quiz Pack</h2>
     <div id="packGrid" class="grid">
       <div class="pack-item" data-pack="capitals-europe">Europe - Capitals</div>
@@ -28,12 +29,12 @@
     <button id="backButton1">Back</button>
   </div>
   <!-- GAME SCREEN -->
-  <div id="gameScreen" style="display: none;">
+  <div id="gameScreen" class="hidden">
     <div id="scoreBlock">
       Score: <span id="scoreSpan">0</span>
     </div>
     <div id="questionBlock">
-      <img id="questionImg" src="images/capitals/budapest.jpg">
+      <img id="questionImg" src="" alt="Quiz image">
       <p id="questionText"></p>
       <div id="answerBlock" class="grid">
         <div id="answerA" class="item"></div>
@@ -46,7 +47,7 @@
     <button id="backButton2">Back to Selection</button>
   </div>
   <!-- GAME OVER SCREEN -->
-  <div id="gameOverScreen" style="display: none;">
+  <div id="gameOverScreen" class="hidden">
     <h2>Game Over!</h2>
     <p>Your final score is: <span id="finalScoreSpan">0</span></p>
     <button id="restartButton">Restart</button>

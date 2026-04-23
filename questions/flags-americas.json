@@ -1,112 +1,52 @@
-﻿[
+[
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "United States",
-                        "Canada",
-                        "Mexico",
-                        "Brazil"
-                    ],
-        "correctAnswer":  "United States",
-        "img":  "images/flags/usa.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "United States",
+        "img": "images/flags/usa.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Canada",
-                        "United States",
-                        "Australia",
-                        "New Zealand"
-                    ],
-        "correctAnswer":  "Canada",
-        "img":  "images/flags/canada.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Canada",
+        "img": "images/flags/canada.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Mexico",
-                        "Spain",
-                        "Colombia",
-                        "Guatemala"
-                    ],
-        "correctAnswer":  "Mexico",
-        "img":  "images/flags/mexico.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Mexico",
+        "img": "images/flags/mexico.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Brazil",
-                        "Colombia",
-                        "Venezuela",
-                        "Guyana"
-                    ],
-        "correctAnswer":  "Brazil",
-        "img":  "images/flags/brazil.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Brazil",
+        "img": "images/flags/brazil.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Argentina",
-                        "Chile",
-                        "Paraguay",
-                        "Uruguay"
-                    ],
-        "correctAnswer":  "Argentina",
-        "img":  "images/flags/argentina.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Argentina",
+        "img": "images/flags/argentina.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Peru",
-                        "Bolivia",
-                        "Ecuador",
-                        "Colombia"
-                    ],
-        "correctAnswer":  "Peru",
-        "img":  "images/flags/peru.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Peru",
+        "img": "images/flags/peru.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Chile",
-                        "Argentina",
-                        "Peru",
-                        "Bolivia"
-                    ],
-        "correctAnswer":  "Chile",
-        "img":  "images/flags/chile.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Chile",
+        "img": "images/flags/chile.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Colombia",
-                        "Venezuela",
-                        "Ecuador",
-                        "Guyana"
-                    ],
-        "correctAnswer":  "Colombia",
-        "img":  "images/flags/colombia.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Colombia",
+        "img": "images/flags/colombia.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Venezuela",
-                        "Guyana",
-                        "Suriname",
-                        "Colombia"
-                    ],
-        "correctAnswer":  "Venezuela",
-        "img":  "images/flags/venezuela.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Venezuela",
+        "img": "images/flags/venezuela.svg"
     },
     {
-        "question":  "Which country has this flag?",
-        "options":  [
-                        "Jamaica",
-                        "Haiti",
-                        "Dominican Republic",
-                        "Cuba"
-                    ],
-        "correctAnswer":  "Jamaica",
-        "img":  "images/flags/jamaica.svg"
+        "question": "Which country has this flag?",
+        "correctAnswer": "Jamaica",
+        "img": "images/flags/jamaica.svg"
     }
 ]

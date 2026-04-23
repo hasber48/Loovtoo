@@ -1,112 +1,52 @@
-﻿[
+[
     {
-        "question":  "What is the capital of Hungary?",
-        "options":  [
-                        "Budapest",
-                        "Paris",
-                        "London",
-                        "Berlin"
-                    ],
-        "correctAnswer":  "Budapest",
-        "img":  "images/capitals/budapest.jpg"
+        "question": "What is the capital of Hungary?",
+        "correctAnswer": "Budapest",
+        "img": "images/capitals/budapest.jpg"
     },
     {
-        "question":  "What is the capital of France?",
-        "options":  [
-                        "Madrid",
-                        "Rome",
-                        "Paris",
-                        "Lisbon"
-                    ],
-        "correctAnswer":  "Paris",
-        "img":  "images/capitals/paris.jpg"
+        "question": "What is the capital of France?",
+        "correctAnswer": "Paris",
+        "img": "images/capitals/paris.jpg"
     },
     {
-        "question":  "What is the capital of Italy?",
-        "options":  [
-                        "Venice",
-                        "Rome",
-                        "Milan",
-                        "Naples"
-                    ],
-        "correctAnswer":  "Rome",
-        "img":  "images/capitals/rome.jpg"
+        "question": "What is the capital of Italy?",
+        "correctAnswer": "Rome",
+        "img": "images/capitals/rome.jpg"
     },
     {
-        "question":  "What is the capital of Germany?",
-        "options":  [
-                        "Berlin",
-                        "Munich",
-                        "Frankfurt",
-                        "Hamburg"
-                    ],
-        "correctAnswer":  "Berlin",
-        "img":  "images/capitals/berlin.jpg"
+        "question": "What is the capital of Germany?",
+        "correctAnswer": "Berlin",
+        "img": "images/capitals/berlin.jpg"
     },
     {
-        "question":  "What is the capital of Luxembourg?",
-        "options":  [
-                        "Luxembourg City",
-                        "Paris",
-                        "Brussels",
-                        "Berlin"
-                    ],
-        "correctAnswer":  "Luxembourg City",
-        "img":  "images/capitals/luxembourg.jpg"
+        "question": "What is the capital of Luxembourg?",
+        "correctAnswer": "Luxembourg City",
+        "img": "images/capitals/luxembourg.jpg"
     },
     {
-        "question":  "What is the capital of Spain?",
-        "options":  [
-                        "Madrid",
-                        "Barcelona",
-                        "Seville",
-                        "Valencia"
-                    ],
-        "correctAnswer":  "Madrid",
-        "img":  "images/capitals/madrid.jpg"
+        "question": "What is the capital of Spain?",
+        "correctAnswer": "Madrid",
+        "img": "images/capitals/madrid.jpg"
     },
     {
-        "question":  "What is the capital of Portugal?",
-        "options":  [
-                        "Lisbon",
-                        "Porto",
-                        "Faro",
-                        "Coimbra"
-                    ],
-        "correctAnswer":  "Lisbon",
-        "img":  "images/capitals/lisbon.jpg"
+        "question": "What is the capital of Portugal?",
+        "correctAnswer": "Lisbon",
+        "img": "images/capitals/lisbon.jpg"
     },
     {
-        "question":  "What is the capital of Belgium?",
-        "options":  [
-                        "Brussels",
-                        "Antwerp",
-                        "Ghent",
-                        "Bruges"
-                    ],
-        "correctAnswer":  "Brussels",
-        "img":  "images/capitals/brussels.jpg"
+        "question": "What is the capital of Belgium?",
+        "correctAnswer": "Brussels",
+        "img": "images/capitals/brussels.jpg"
     },
     {
-        "question":  "What is the capital of the Netherlands?",
-        "options":  [
-                        "Amsterdam",
-                        "Rotterdam",
-                        "The Hague",
-                        "Utrecht"
-                    ],
-        "correctAnswer":  "Amsterdam",
-        "img":  "images/capitals/amsterdam.jpg"
+        "question": "What is the capital of the Netherlands?",
+        "correctAnswer": "Amsterdam",
+        "img": "images/capitals/amsterdam.jpg"
     },
     {
-        "question":  "What is the capital of Austria?",
-        "options":  [
-                        "Vienna",
-                        "Salzburg",
-                        "Graz",
-                        "Innsbruck"
-                    ],
-        "correctAnswer":  "Vienna",
-        "img":  "images/capitals/vienna.jpg"
+        "question": "What is the capital of Austria?",
+        "correctAnswer": "Vienna",
+        "img": "images/capitals/vienna.jpg"
     }
 ]
